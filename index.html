@@ -113,7 +113,11 @@
       border-bottom: 2px solid #ddd;
       margin: 0 1rem;
     }
-
+    
+    .crosshair-code {
+    word-break: break-all;
+    white-space: normal;
+    }
     footer {
       margin-top: 4rem;
       text-align: center;
@@ -183,26 +187,36 @@
       <span>VALORANT Settings</span>
     </div>
 
-    <div class="section">
-      <h2>Mouse</h2>
-      <div class="card" style="font-size: 1.3rem; padding: 1rem;">
-        <div style="
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 1rem;
-        ">
-          <div><strong>DPI:</strong> 1600</div>
-          <div><strong>Sensibilidad:</strong> 0.131</div>
-          <div><strong>Scoped Sensitivity:</strong> 1</div>
-          <div><strong>ADS Sensitivity:</strong> 1</div>
-          <div><strong>eDPI:</strong> 209.6</div>
-          <div><strong>Hz:</strong> 4000</div>
-          <div><strong>Window Sensitivity:</strong> 6</div>
-          <div><strong>Raw Input Buffer:</strong> On</div>
-          
-        </div>
-      </div>
+   <style>
+  .mouse-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    .mouse-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
+
+<div class="section">
+  <h2>Mouse</h2>
+  <div class="card" style="font-size: 1.3rem; padding: 1rem;">
+    <div class="mouse-grid">
+      <div><strong>DPI:</strong> 1600</div>
+      <div><strong>Sensibilidad:</strong> 0.131</div>
+      <div><strong>Scoped Sensitivity:</strong> 1</div>
+      <div><strong>ADS<br>Sensitivity:</strong> 1</div>
+      <div><strong>eDPI:</strong> 209.6</div>
+      <div><strong>Hz:</strong> 4000</div>
+      <div><strong>Window Sensitivity:</strong> 6</div>
+      <div><strong>Raw Input Buffer:</strong> On</div>
     </div>
+  </div>
+</div>
+
 
 
 
@@ -271,9 +285,23 @@
         </div>
       </div>
     </div>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-info">
+        <h1>Rutina</h1>
+        <div class="social-icons">
+         
+        </div>
+        <div class="card">
+          <h3>Mi Rutina AimLab</h3>
+          <a href="https://go.aimlab.gg/v1/redirects?link=aimlab%3A%2F%2Fworkshop%3Fid%3D3539287864%26source%3DC497755B9E8FEC36&link=steam%3A%2F%2Frungameid%2F714010" target="_blank" style="color: #0077cc; text-decoration: none;">JUGAR</a>
+          <ul style="list-style: none; padding: 0; margin-top: 0.5rem;"></ul>
+        </div>
 
-    
-    
+      </div>
+    </div>
+
 
     <footer>
       Página de configuración creada por bruS — 2025
